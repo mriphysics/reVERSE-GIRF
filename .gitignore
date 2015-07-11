@@ -1,0 +1,8 @@
+# Ignore everything
+*.*
+
+# Selective un-igore a few things
+!*.m
+!*.md
+!.gitignore
+!*.png
