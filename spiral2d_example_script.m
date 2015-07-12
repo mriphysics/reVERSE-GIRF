@@ -1,6 +1,6 @@
-%%% Visit to Zurich Feb 2015
-% 2-3-15: v8 script. reVERSE with the measured GIRF
-% Make example for publishing
+%%% reVERSE for 2D spiral with and without measured GIRFs
+
+%%% Shaihan Malik July 2015
 
 %% constant definitions
 
