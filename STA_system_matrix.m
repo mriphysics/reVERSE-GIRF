@@ -19,13 +19,13 @@ function Afull = STA_system_matrix(x,k,t,Tx,b0,mask,varargin)
 %               extra arguments allow setting quadrature (i.e. single
 %               channel TX) and to loop the matrix concatenation (slower
 %               but less memory reqd)
-%                   
+%
 %
 % Shaihan Malik 2009 - 2015
 
 % 3-2-09: SJM. Function to define system matrix for STA
 % 3-12-09:  Add ability to correct for staircasing of grads
-% 30-1-13:  Change default frequency convention to -iwt. 
+% 30-1-13:  Change default frequency convention to -iwt.
 
 con=consts;
 gamma_uT = con.gamma_uT; % units rad s^-1 uT^-1

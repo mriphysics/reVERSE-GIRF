@@ -24,9 +24,14 @@ Code is available as a release including binary files (Matlab .mat files) contai
 Release 1.0 of this code is citeable: [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.19957.svg)](http://dx.doi.org/10.5281/zenodo.19957)
 
 ### Usage
-`spiral2d_example_script.m` is a Matlab scripts that runs through 2D spiral excitations with and without including the GIRF. Scripts rely on B1 and B0 maps and GIRF data available on the releases page.
+Run through script `spiral2d_example_script.m`: this takes the user through an example 2D spiral excitation with and without including the GIRF. Scripts rely on B1 and B0 maps and GIRF data available on the releases page.
 
-When executed the `reVERSE_GIRF` function iteratively reduces the peak B1 of the RF pulse by dilating the gradients and correcting for distortion summarized by the GIRF.
+The `reVERSE_GIRF` function iteratively reduces the peak B1 of the RF pulse by dilating the gradients and correcting for distortion summarized by the GIRF. Below is an example of the display produced when parameter 'show' is selected.
+
+The top row shows the B1 of the RF pulse (maximum across all channels in case of PTx). The black RF pulse trace represents the result of VERSE based pulse design on the most recent iteration (it limits B1 below the design limit (green box) as required). The red trace shows the RF pulse amplitude after re-design of the pulse to account for B0 effects. The algorithm will terminate if the red trace is below the shaded red box representing the maximum allowed B1. See [(Lee et al, 2012)](http://doi.org/10.1002/mrm.23010) for an explanation of these two separate limits.
+
+The middle row shows gradients (black=starting;red=current iteration). The bottom row shows how the maximum B1 changes through the iterations.
+
 ![alt text](screenshot.png "Example screenshot")
 
 
