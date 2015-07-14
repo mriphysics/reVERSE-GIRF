@@ -21,7 +21,7 @@ Author: Shaihan Malik, July 2015
 ### [Releases](https://github.com/mriphysics/phase_relaxed_CPMG_excitation/releases)
 Code is available as a release including binary files (Matlab .mat files) containing B1 and B0 field maps and GIRF data. Please see the releases page for more.
 
-Release 1.0 of this code is citeable: [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.19957.svg)](http://dx.doi.org/10.5281/zenodo.19957)
+Release 1.0 of this code is citeable: [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.20127.svg)](http://dx.doi.org/10.5281/zenodo.20127)
 
 ### Usage
 Run through script `spiral2d_example_script.m`: this takes the user through an example 2D spiral excitation with and without including the GIRF. Scripts rely on B1 and B0 maps and GIRF data available on the releases page.
